@@ -38,7 +38,13 @@
   /* Reveal */
   const els = $$('.up, .mask');
   if (still || !('IntersectionObserver' in window)) els.forEach((e) => e.classList.add('on'));
-  else { const io = new IntersectionObserver((es) => es.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('on'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: 0.06 }); els.forEach((e) => io.observe(e)); }
+  else {
+    // A fully clipped element never counts as intersecting, so masked images are watched through their parent.
+    const watch = new Map();
+    els.forEach((e) => { const t = e.classList.contains('mask') ? e.parentElement : e; if (!watch.has(t)) watch.set(t, []); watch.get(t).push(e); });
+    const io = new IntersectionObserver((es) => es.forEach((en) => { if (en.isIntersecting) { watch.get(en.target).forEach((e) => e.classList.add('on')); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+    watch.forEach((_, t) => io.observe(t));
+  }
 
   /* Parallax */
   const px = $$('[data-parallax]');
