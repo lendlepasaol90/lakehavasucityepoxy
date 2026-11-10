@@ -91,7 +91,7 @@ Only to answer your request, arrange a quote and talk with you about your projec
 
 ## Third-party services
 
-Messages may be delivered to us through an email or automation service. The map is provided by Google Maps and photos are loaded from Unsplash, which may log basic technical data such as your IP address under their own policies.
+Messages may be delivered to us through an email or automation service. The map is provided by Google Maps, which may log basic technical data such as your IP address under their own policies.
 
 ## Your choices
 

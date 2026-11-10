@@ -243,7 +243,7 @@ export function renderHome() {
   <div class="wrap">
     <div class="head up">${ripple}<h2 id="gal-h">Featured floor styles</h2><p class="muted">A look at the finishes we install most. Bring your questions and we will bring the samples.</p></div>
     <div class="masonry">
-      <figure class="up">${img('garagePair', { widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 0.75 })}<figcaption>Garage flake system</figcaption></figure>
+      <figure class="up">${img('garagePair', { widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 0.75 })}<figcaption>High-gloss garage floor</figcaption></figure>
       <figure class="up">${img('poolLadder', { widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 1.2 })}<figcaption>Pool surround</figcaption></figure>
       <figure class="up">${img('galleryFloor', { widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 0.9 })}<figcaption>Seamless interior</figcaption></figure>
       <figure class="up">${img('garageShow', { widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 1.3 })}<figcaption>Showcase garage</figcaption></figure>

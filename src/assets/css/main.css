@@ -493,3 +493,6 @@ strong, b { font-weight: 600; color: var(--ink); }
   .lake__bg { inset: 0; transform: none !important; }
 }
 @media print { .top, .callbar, .modal, .foot__map, .qf { display: none !important; } }
+
+/* Let comparison tables scroll inside their box instead of widening the page */
+main *:has(table) { min-width: 0; }

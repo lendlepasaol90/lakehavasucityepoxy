@@ -108,7 +108,7 @@ A professional install costs more up front, but the floor is bonded into the sla
       toc: 'Care',
       body: `Blow out or sweep the garage regularly, especially after windy days and beach trips. Wipe up fuel, oil and sunscreen when you notice them. For a deeper clean, use warm water and a pH-neutral cleaner with a soft mop or deck brush. Skip harsh solvents and citrus degreasers.
 
-Put a pad or plywood square under trailer jacks, kickstands and RV leveling feet. If a lane dulls after years of use, the topcoat can be lightly sanded and recoated without redoing the whole floor.`,
+Slide a scrap of plywood beneath the boat trailer jack, motorcycle stand or motorhome levelers so the load spreads out. Years down the road, a worn path to the house door gets a light scuff and a fresh clear coat; the flake underneath stays put.`,
     },
     {
       kind: 'prose',
