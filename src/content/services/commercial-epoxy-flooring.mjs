@@ -10,7 +10,7 @@ export default {
   h1: 'Commercial epoxy floors for Havasu businesses',
   lede: 'From busy kitchens near the Channel to boat showrooms and retail on McCulloch, Havasu businesses need floors that take a beating, clean up fast and do not cost them a peak-season weekend.',
   chips: ['Restaurants & bars', 'Boat dealers & service', 'Retail & hospitality', 'Off-season & overnight work'],
-  image: 'galleryFloor',
+  image: 'xDetailShop',
   formPreset: 'Commercial floor',
   intro: `Business in Lake Havasu City follows the water. Spring break and summer weekends bring huge crowds, boat season fills the service bays, and the quieter months are when owners finally have time to fix things. A floor project has to fit into that rhythm.
 

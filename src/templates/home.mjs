@@ -1,5 +1,5 @@
 import { site } from '../site.mjs';
-import { esc, md, img } from '../lib/html.mjs';
+import { esc, md, img, beginDedupe, endDedupe } from '../lib/html.mjs';
 import { layout } from './layout.mjs';
 import { leadForm, phoneLink } from './parts.mjs';
 import { services } from '../content/services/index.mjs';
@@ -19,6 +19,7 @@ const faqs = [
 ];
 
 export function renderHome() {
+  beginDedupe(['xShinyRoom', 'marina', 'galleryFloor', 'garageDoorway', 'garagePair', 'garageShow', 'lakeBoats', 'loungers', 'poolLadder', 'warehouseModern']);
   const tabs = services.map((s, i) => `<li role="presentation"><button class="switch__tab" type="button" role="tab" id="st-${s.slug}" aria-controls="sp-${s.slug}" aria-selected="${i === 0}" tabindex="${i ? -1 : 0}">${esc(s.name)}<i aria-hidden="true">→</i></button></li>`).join('');
   const panels = services
     .map((s, i) => `<div class="switch__panel" role="tabpanel" id="sp-${s.slug}" aria-labelledby="st-${s.slug}"${i ? ' hidden' : ''}>
@@ -28,7 +29,7 @@ export function renderHome() {
 
   const body = `
 <section class="hero" aria-labelledby="hero-h">
-  <div class="hero__ghost" aria-hidden="true">${img('lakeBoats', { widths: [800, 1400, 2000], alt: '' })}</div>
+  <div class="hero__ghost" aria-hidden="true">${img('lakeBoats', { keep: true, widths: [800, 1400, 2000], alt: '' })}</div>
   <div class="wrap hero__grid">
     <div>
       <h1 id="hero-h" class="up on">Floors made for lake life</h1>
@@ -36,7 +37,7 @@ export function renderHome() {
       <div class="hero__form up on">${leadForm({ id: 'hero-form', heading: 'Get a free quote', button: 'Request my quote' })}</div>
     </div>
     <div class="hero__pic">
-      <div class="hero__img">${img('garageDoorway', { eager: true, sizes: '(max-width: 980px) 92vw, 540px', widths: [480, 760, 1080], ratio: 0.8 })}</div>
+      <div class="hero__img">${img('garageDoorway', { keep: true, eager: true, sizes: '(max-width: 980px) 92vw, 540px', widths: [480, 760, 1080], ratio: 0.8 })}</div>
       <p class="hero__badge"><i>✓</i><span><b>Diamond-ground prep</b>Every slab, every time. It is what keeps coatings bonded in the heat.</span></p>
     </div>
   </div>
@@ -104,7 +105,7 @@ export function renderHome() {
       </div>
     </article>
     <article class="card card--offset up t1">
-      <figure>${img('garageShow', { sizes: '(max-width: 980px) 92vw, 600px', widths: [500, 900], ratio: 1.6 })}</figure>
+      <figure>${img('xShinyRoom', { keep: true, sizes: '(max-width: 980px) 92vw, 600px', widths: [500, 900], ratio: 1.6 })}</figure>
       <div class="card__body">
         <h2 style="font-size:1.75rem">Decorative and metallic finishes</h2>
         <p>Want a floor that turns heads? Decorative flake systems scatter colored chips through the coating for a speckled, granite-like look that hides sand. Metallic epoxy uses pearl and metal pigments, hand-worked while wet, for a finish with real depth, a lot like light moving across the lake surface.</p>
@@ -141,7 +142,7 @@ export function renderHome() {
     <div class="head up">${ripple}<h2 id="biz-h">Commercial and industrial flooring</h2><p class="muted">Havasu businesses run on tourism, boating and the services that support them. Their floors need to be tough, easy to clean and installed without costing a busy weekend.</p></div>
     <div class="biz">
       <article class="biz__row up">
-        <figure>${img('marina', { sizes: '(max-width: 980px) 92vw, 480px', widths: [500, 900], alt: 'Marina with boats docked near a bridge, typical of lakeside businesses we serve' })}</figure>
+        <figure>${img('marina', { keep: true, sizes: '(max-width: 980px) 92vw, 480px', widths: [500, 900], alt: 'London Bridge over the channel, close to the lakeside businesses we serve' })}</figure>
         <div class="biz__body">
           <h3 style="font-size:1.5rem">Commercial epoxy flooring</h3>
           <p>Restaurants and bars near the Channel, retail along McCulloch Boulevard, boat dealers and service shops, hotels and vacation rental managers all need floors that take traffic and clean quickly. We install seamless resin systems with texture where floors get wet, chemical-resistant topcoats for kitchens and service bays, and decorative finishes for showrooms.</p>
@@ -243,12 +244,12 @@ export function renderHome() {
   <div class="wrap">
     <div class="head up">${ripple}<h2 id="gal-h">Featured floor styles</h2><p class="muted">A look at the finishes we install most. Bring your questions and we will bring the samples.</p></div>
     <div class="masonry">
-      <figure class="up">${img('garagePair', { widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 0.75 })}<figcaption>High-gloss garage floor</figcaption></figure>
-      <figure class="up">${img('poolLadder', { widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 1.2 })}<figcaption>Pool surround</figcaption></figure>
-      <figure class="up">${img('galleryFloor', { widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 0.9 })}<figcaption>Seamless interior</figcaption></figure>
-      <figure class="up">${img('garageShow', { widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 1.3 })}<figcaption>Showcase garage</figcaption></figure>
-      <figure class="up">${img('warehouseModern', { widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 0.8 })}<figcaption>Light industrial</figcaption></figure>
-      <figure class="up">${img('loungers', { widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 1.25 })}<figcaption>Textured pool deck</figcaption></figure>
+      <figure class="up">${img('garagePair', { keep: true, widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 0.75 })}<figcaption>High-gloss garage floor</figcaption></figure>
+      <figure class="up">${img('poolLadder', { keep: true, widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 1.2 })}<figcaption>Pool surround</figcaption></figure>
+      <figure class="up">${img('galleryFloor', { keep: true, widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 0.9 })}<figcaption>Seamless interior</figcaption></figure>
+      <figure class="up">${img('garageShow', { keep: true, widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 1.3 })}<figcaption>Showcase garage</figcaption></figure>
+      <figure class="up">${img('warehouseModern', { keep: true, widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 0.8 })}<figcaption>Light industrial</figcaption></figure>
+      <figure class="up">${img('loungers', { keep: true, widths: [400, 700], sizes: '(max-width: 640px) 92vw, 400px', ratio: 1.25 })}<figcaption>Textured pool deck</figcaption></figure>
     </div>
   </div>
 </section>
@@ -279,6 +280,7 @@ export function renderHome() {
   </div>
 </section>`;
 
+  endDedupe();
   return layout({
     path: '/',
     title: 'Lake Havasu City Epoxy | Garage, RV Bay & Pool Deck Coatings',
