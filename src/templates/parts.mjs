@@ -19,7 +19,7 @@ export function leadForm({ id, heading, intro, button = 'Get my free quote', wit
     <div class="hp" aria-hidden="true"><label for="${f('company')}">Company</label><input id="${f('company')}" name="company" type="text" tabindex="-1" autocomplete="off"></div>
   </div>
   <button class="pill pill--teal qf__go" type="submit"><span>${esc(button)}</span></button>
-  <p class="qf__note">No spam, no sharing. We use your details only to reply. <a href="/privacy-policy/">Privacy</a></p>
+  <p class="qf__note">No spam, no sharing. We use your details only to reply. <a href="/privacy/">Privacy</a></p>
   <div class="qf__msg" role="status" aria-live="polite"></div>
 </form>`;
 }
@@ -38,36 +38,24 @@ export function header(current = '') {
         <li class="nav__dd"><button type="button" class="nav__btn" aria-expanded="false" aria-controls="dd-services">Services <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
           <div class="dd" id="dd-services"><ul>${items}</ul></div></li>
         <li><a href="/about-us/"${current === 'about' ? ' aria-current="page"' : ''}>About us</a></li>
-        <li><a href="/service-areas/"${current === 'areas' ? ' aria-current="page"' : ''}>Service areas</a></li>
-        <li><a href="/contact-us/"${current === 'contact' ? ' aria-current="page"' : ''}>Contact</a></li>
+        <li><a href="/service-area/"${current === 'areas' ? ' aria-current="page"' : ''}>Service area</a></li>
+        <li><a href="/get-a-quote/"${current === 'contact' ? ' aria-current="page"' : ''}>Contact</a></li>
       </ul>
     </nav>
     <div class="top__act">
       <a class="top__tel" href="${site.phoneHref}"><span class="top__tel-ico" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg></span><span class="top__tel-num">${esc(site.phone)}</span></a>
-      <button class="pill pill--teal pill--sm" type="button" data-quote>Free quote</button>
+      <a class="pill pill--teal pill--sm" href="#__EST__">Free quote</a>
       <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="mnav" aria-label="Open menu"><span></span></button>
     </div>
   </div>
   <div class="mnav" id="mnav" hidden>
     <div class="wrap">
       <ul class="mnav__svc">${services.map((s) => `<li><a href="/${s.slug}/">${esc(s.name)}</a></li>`).join('')}</ul>
-      <ul class="mnav__pg"><li><a href="/">Home</a></li><li><a href="/about-us/">About us</a></li><li><a href="/service-areas/">Service areas</a></li><li><a href="/contact-us/">Contact</a></li></ul>
+      <ul class="mnav__pg"><li><a href="/">Home</a></li><li><a href="/about-us/">About us</a></li><li><a href="/service-area/">Service area</a></li><li><a href="/get-a-quote/">Contact</a></li></ul>
       <a class="pill pill--teal pill--block" href="${site.phoneHref}">Call ${esc(site.phone)}</a>
     </div>
   </div>
-</header>
-<dialog class="modal" id="quote-modal" aria-labelledby="modal-h">
-  <div class="modal__box">
-    <button class="modal__x" type="button" data-modal-close aria-label="Close">×</button>
-    <div class="modal__side" aria-hidden="true"><svg viewBox="0 0 200 400" preserveAspectRatio="none"><path d="M0 0h120c-40 60 40 110 0 170s40 120 0 230H0z" /></svg></div>
-    <div class="modal__body">
-      <h2 id="modal-h">Get a free floor quote</h2>
-      <p class="modal__lead">Tell us what you'd like coated. We'll be in touch to set up a quick on-site visit and a written price.</p>
-      ${leadForm({ id: 'modal-form', withMessage: true, layout: 'grid' })}
-      <p class="modal__alt">Prefer the phone? ${phoneLink()}</p>
-    </div>
-  </div>
-</dialog>`;
+</header>`;
 }
 
 export function footer() {
@@ -82,10 +70,10 @@ export function footer() {
       <a class="foot__tel" href="${site.phoneHref}">${esc(site.phone)}</a>
     </div>
     <nav aria-label="Footer services"><p class="foot__h">Coatings</p><ul>${services.map((s) => `<li><a href="/${s.slug}/">${esc(s.name)}</a></li>`).join('')}</ul></nav>
-    <nav aria-label="Footer company"><p class="foot__h">Company</p><ul><li><a href="/about-us/">About us</a></li><li><a href="/service-areas/">Service areas</a></li><li><a href="/contact-us/">Contact</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></nav>
+    <nav aria-label="Footer company"><p class="foot__h">Company</p><ul><li><a href="/about-us/">About us</a></li><li><a href="/service-area/">Service area</a></li><li><a href="/get-a-quote/">Contact</a></li><li><a href="/privacy/">Privacy policy</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></nav>
     <div class="foot__map"><p class="foot__h">Lake Havasu City, AZ</p><div class="foot__frame"><iframe title="Map of Lake Havasu City, Arizona" src="${src}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
   </div>
   <div class="wrap foot__base"><p>© <span data-year>2026</span> ${esc(site.name)}. All rights reserved.</p></div>
 </footer>
-<a class="callbar" href="${site.phoneHref}">Call now</a><button class="callbar callbar--q" type="button" data-quote>Free quote</button>`;
+<a class="callbar" href="${site.phoneHref}">Call now</a><a class="callbar callbar--q" href="#__EST__">Free quote</a>`;
 }

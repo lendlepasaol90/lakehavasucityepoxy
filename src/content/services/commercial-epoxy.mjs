@@ -1,5 +1,5 @@
 export default {
-  slug: 'commercial-epoxy-flooring',
+  slug: 'commercial-epoxy',
   name: 'Commercial Epoxy Flooring',
   tagline: 'Restaurants, marinas, retail and rentals',
   summary: 'Seamless, easy-clean floors for restaurants, boat dealers, retail, hotels and rentals, installed around your busy season.',
@@ -38,7 +38,7 @@ Resin flooring is a natural fit for Havasu businesses. It is seamless, so it cle
       image: 'marina',
       body: `Marine businesses are a big part of Havasu, and their floors take unique abuse. Showrooms need floors that make boats look their best under bright lights. Service bays need floors that shrug off fuel, oil, hydraulic fluid and the weight of boats on stands and trailers. Washdown areas need grip and drainage.
 
-For showrooms, we often recommend a high-gloss flake or [metallic finish](/metallic-epoxy-flooring/) with a tough, UV-stable topcoat. For service bays, a flexible polyurea base with a chemical-resistant, textured topcoat handles the loads and spills. We can also add striping for work zones and walkways.`,
+For showrooms, we often recommend a high-gloss flake or [metallic finish](/metallic-floors/) with a tough, UV-stable topcoat. For service bays, a flexible polyurea base with a chemical-resistant, textured topcoat handles the loads and spills. We can also add striping for work zones and walkways.`,
     },
     {
       kind: 'uses',
@@ -126,6 +126,6 @@ Maintenance is simple: regular cleaning with the right products, mats at entries
     {"q": "Will the floor handle boats sitting on stands for weeks?", "a": "With a flexible base and pads under stands, yes. We size the system to the loads your shop actually sees."},
     {"q": "Can you add our logo or brand colors to the floor?", "a": "Brand colors are easy to work into solid and flake systems. Simple logos or graphics can be added in many cases, usually under the clear topcoat so they last. We will review the artwork and the location, such as an entry or showroom, and tell you what is practical."},
   ],
-  related: ['warehouse-floor-coatings', 'metallic-epoxy-flooring', 'polyurea-floor-coatings'],
+  related: ['metallic-floors', 'polyurea-shop-floors'],
   cta: { heading: 'Plan your commercial floor', body: 'Call or send the form with a few details about the space and your slow months. After a site walk, you will receive written pricing and a calendar that keeps your doors open when it counts.' },
 };

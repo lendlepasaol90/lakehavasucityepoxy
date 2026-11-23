@@ -38,7 +38,7 @@ export function renderService(s) {
     <div class="crumb">${crumbs([{ name: 'Home', path: '/' }, { name: s.name, path }])}</div>
     <h1 class="up on">${esc(s.h1)}</h1>
     <p class="lead up on">${inline(s.lede)}</p>
-    <div class="ph__btns"><button class="pill pill--teal" type="button" data-quote>Get a free quote</button><a class="pill pill--line" href="${site.phoneHref}">Call ${esc(site.phone)}</a></div>
+    <div class="ph__btns"><a class="pill pill--teal" href="#__EST__">Get a free quote</a><a class="pill pill--line" href="${site.phoneHref}">Call ${esc(site.phone)}</a></div>
     <div class="ph__pic">${img(s.image, { eager: true, widths: [800, 1300, 1900], ratio: 21 / 8 })}${s.chips ? `<ul class="ph__chips">${s.chips.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>` : ''}</div>
   </div>
 </section>
@@ -47,7 +47,7 @@ export function renderService(s) {
     <aside class="rail" aria-label="On this page">
       <p>On this page</p>
       <ol>${s.blocks.map((b) => `<li><a href="#${b.id || slugify(b.heading)}">${esc(b.toc || b.heading)}</a></li>`).join('')}<li><a href="#faq">Questions</a></li></ol>
-      <div class="rail__cta"><b>Free on-site quote</b><span>We measure, check the slab and put the price in writing.</span><button class="pill pill--teal pill--sm pill--block" type="button" data-quote>Request a quote</button></div>
+      <div class="rail__cta"><b>Free on-site quote</b><span>We measure, check the slab and put the price in writing.</span><a class="pill pill--teal pill--sm pill--block" href="#__EST__">Request a quote</a></div>
     </aside>
     <article class="doc__main">
       <div class="open up">${md(s.intro)}</div>
@@ -67,7 +67,7 @@ ${rel.length ? `<section class="sec sec--s" aria-labelledby="rel-h"><div class="
   <div class="closer__bg" aria-hidden="true">${img(s.closerImage || 'sunsetRide', { widths: [800, 1400], alt: '' })}</div>
   <div class="wrap closer__grid">
     <div class="up"><h2 id="est-h">${esc(s.cta.heading)}</h2>${md(s.cta.body)}
-      <ul class="closer__list"><li><i>☎</i>${phoneLink()}</li><li><i>✓</i>Free, written, on-site quotes</li><li><i>⌖</i><a href="/service-areas/">Lake Havasu City and nearby</a></li></ul></div>
+      <ul class="closer__list"><li><i>☎</i>${phoneLink()}</li><li><i>✓</i>Free, written, on-site quotes</li><li><i>⌖</i><a href="/service-area/">Lake Havasu City and nearby</a></li></ul></div>
     <div class="closer__card up t1">${leadForm({ id: `${s.slug}-form`, heading: 'Request a quote', withMessage: true, preset: s.formPreset })}</div>
   </div>
 </section>`;

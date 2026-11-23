@@ -1,5 +1,5 @@
 export default {
-  slug: 'metallic-epoxy-flooring',
+  slug: 'metallic-floors',
   name: 'Metallic Epoxy Flooring',
   tagline: 'Floors with the shimmer and depth of the lake',
   summary: 'Hand-worked metallic pigments that ripple and shimmer like light on water. For lake houses, showrooms and bars.',
@@ -116,7 +116,7 @@ Over the years, the topcoat may lose some shine in busy paths. A light sanding a
       kind: 'prose',
       heading: 'Is metallic right for you?',
       toc: 'Is it right for you?',
-      body: `Metallic is a great choice if you want a floor that is a design feature, you are comfortable with a unique result rather than an exact match, and the space is indoors or well protected. It is less ideal for working garages full of tools and sand, or for anyone who needs a floor that never shows a footprint. In those cases a [flake floor](/decorative-flake-flooring/) is the more practical choice, and we will tell you so.`,
+      body: `Metallic is a great choice if you want a floor that is a design feature, you are comfortable with a unique result rather than an exact match, and the space is indoors or well protected. It is less ideal for working garages full of tools and sand, or for anyone who needs a floor that never shows a footprint. In those cases a [flake floor](/flake-floor-coatings/) is the more practical choice, and we will tell you so.`,
     },
     {"kind": "prose", "heading": "Lighting a metallic floor", "toc": "Lighting", "body": "Lighting changes how a metallic floor looks more than any other finish. Natural light from lake-facing windows brings out movement and depth during the day. Warm lamps and recessed lights make copper and bronze glow at night. Cool LED lighting sharpens silver and blue tones. If you are planning lighting changes in the room, tell us, and we can tune the palette so the floor looks its best in the light it will actually live in."},
   ],
@@ -127,10 +127,10 @@ Over the years, the topcoat may lose some shine in busy paths. A light sanding a
     { q: 'Can a metallic floor go in my garage?', a: 'Yes, in a garage used mainly for parking and display. For a busy workshop or boat garage, a flake system is more practical.' },
     { q: 'How long does it take?', a: 'Most projects take two to four days including prep and topcoat, plus cure time before furniture returns.' },
     { q: 'Is it slippery?', a: 'Gloss is smooth and can be slick when wet. Near pool doors and entries, we recommend a satin topcoat with a fine texture additive.' },
-    { q: 'Can you do metallic in a business?', a: 'Absolutely. Bars, restaurants, salons and showrooms use metallic floors, usually with a tougher commercial topcoat. See [commercial flooring](/commercial-epoxy-flooring/).' },
+    { q: 'Can you do metallic in a business?', a: 'Absolutely. Bars, restaurants, salons and showrooms use metallic floors, usually with a tougher commercial topcoat. See [commercial flooring](/commercial-epoxy/).' },
     { q: 'Can I see finished floors?', a: 'We bring sample boards in multiple palettes to every metallic consultation so you can judge the look, depth and sheen in person.' },
     {"q": "Can a metallic floor be repaired?", "a": "The topcoat can be refreshed easily. Damage to the decorative layer itself is harder to blend, which is why we recommend good mats and furniture pads from day one."},
   ],
-  related: ['residential-epoxy-flooring', 'commercial-epoxy-flooring', 'decorative-flake-flooring'],
+  related: ['lake-house-epoxy-floors', 'commercial-epoxy', 'flake-floor-coatings'],
   cta: { heading: 'Start with a metallic design consult', body: 'Sit down with sample boards in lake blue, pearl, copper and driftwood, tell us the feel you are after, and we will check the slab and send a written price.' },
 };

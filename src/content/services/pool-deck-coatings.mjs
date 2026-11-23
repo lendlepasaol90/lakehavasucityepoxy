@@ -1,5 +1,5 @@
 export default {
-  slug: 'patio-concrete-coatings',
+  slug: 'pool-deck-coatings',
   name: 'Patio & Pool Deck Coatings',
   tagline: 'Cooler, safer pool decks, patios and walkways',
   summary: 'Light, textured, UV-stable coatings for pool decks, patios, walkways and entries that face the full Havasu sun.',
@@ -125,6 +125,6 @@ Hard water can leave white spots on any surface. Textured, light finishes hide t
     {"q": "How long will a pool deck coating last?", "a": "It depends on sun exposure, foot traffic and care. UV-stable systems with good texture hold up well, and a maintenance coat every few years keeps color and grip fresh in full-sun areas."},
     {"q": "Can you fix cracks in my pool deck before coating?", "a": "Yes. Cracks are routed out and filled with flexible, exterior-rated material, then blended into the new finish. Large or shifting cracks can still show over time, and we will tell you if a crack looks structural."},
   ],
-  related: ['polyaspartic-floor-coatings', 'decorative-flake-flooring', 'garage-floor-coatings'],
+  related: ['one-day-polyaspartic', 'flake-floor-coatings', 'garage-rv-boat-bay-coatings'],
   cta: { heading: 'Make the backyard more comfortable', body: 'We will look at your pool deck, patio and walkways, check the concrete and drainage and give you a clear written quote.' },
 };

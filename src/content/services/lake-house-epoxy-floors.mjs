@@ -1,5 +1,5 @@
 export default {
-  slug: 'residential-epoxy-flooring',
+  slug: 'lake-house-epoxy-floors',
   name: 'Residential Epoxy Flooring',
   tagline: 'Cool, seamless floors for lake houses and casitas',
   summary: 'Seamless interior floors for lake houses, casitas, game rooms and rentals. Cool underfoot, sand-friendly and easy to clean.',
@@ -63,7 +63,7 @@ Finally, there is upkeep. A coated floor needs a dust mop and an occasional damp
       items: [
         { name: 'Satin solid color', body: 'Soft sheen in warm sand, light grey or crisp white. Calm, modern and forgiving of footprints.' },
         { name: 'Micro flake', body: 'Tiny chips for a stone-like texture that hides sand. Great for entries and laundry rooms.' },
-        { name: 'Metallic', body: 'Flowing pearl, silver or aqua pigments for a statement room. See [metallic epoxy](/metallic-epoxy-flooring/).' },
+        { name: 'Metallic', body: 'Flowing pearl, silver or aqua pigments for a statement room. See [metallic epoxy](/metallic-floors/).' },
         { name: 'Sealed natural concrete', body: 'A clear system for slabs worth showing off, with a subtle sheen.' },
       ],
     },
@@ -124,6 +124,6 @@ After years of use, the topcoat may dull in the busiest paths. A light sanding a
     {"q": "Does the floor need to be resealed?", "a": "Not on a schedule. Most interior floors only need a fresh topcoat if the high-traffic paths start to look dull, which can be years down the line depending on use."},
     {"q": "Can you coat a casita or guest house slab?", "a": "Yes. Casitas are among the most common interior spaces we coat. They are usually small, quick projects and a great fit for satin or micro flake finishes."},
   ],
-  related: ['metallic-epoxy-flooring', 'decorative-flake-flooring', 'patio-concrete-coatings'],
+  related: ['metallic-floors', 'flake-floor-coatings', 'pool-deck-coatings'],
   cta: { heading: 'Thinking about coating your floors?', body: 'We will check the slab, bring finish samples and give you a written quote with timing that works around your household or rental calendar.' },
 };

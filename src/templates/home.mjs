@@ -62,7 +62,7 @@ export function renderHome() {
       ${ripple}
       <h2 id="intro-h">Concrete coatings for Havasu homes, toys and businesses</h2>
       <p>Life in Lake Havasu City happens outside, and a lot of it starts in the garage. That is where the boat waits on its trailer, the side-by-side gets hosed off, the coolers get loaded and the wet towels land after a day on the water. It is also where the concrete takes the most punishment.</p>
-      <p>We coat that concrete so it lasts. Our crews grind and repair the slab, then install a system that suits how you use the space, whether that is a <a href="/garage-floor-coatings/">garage floor coating</a> with a sand-hiding flake finish, a cooler, slip-resistant <a href="/patio-concrete-coatings/">pool deck</a>, a seamless <a href="/residential-epoxy-flooring/">interior floor</a> for a lake house, or a tough <a href="/commercial-epoxy-flooring/">commercial floor</a> for a marina shop or restaurant.</p>
+      <p>We coat that concrete so it lasts. Our crews grind and repair the slab, then install a system that suits how you use the space, whether that is a <a href="/garage-rv-boat-bay-coatings/">garage floor coating</a> with a sand-hiding flake finish, a cooler, slip-resistant <a href="/pool-deck-coatings/">pool deck</a>, a seamless <a href="/lake-house-epoxy-floors/">interior floor</a> for a lake house, or a tough <a href="/commercial-epoxy/">commercial floor</a> for a marina shop or restaurant.</p>
       <p>Not sure where to start? Most people begin with the garage, then come back for the pool deck or an interior room once they see the difference. Others coat everything at once to get it done before summer. Either way, we will walk the property with you and price each area separately.</p>
       <p>Every quote is free, done on site and written down, so you know exactly what you are getting before anything starts.</p>
     </div>
@@ -71,7 +71,7 @@ export function renderHome() {
 
 <section class="sec sec--aqua" id="services" aria-labelledby="svc-h">
   <div class="wrap">
-    <div class="head up">${ripple}<h2 id="svc-h">Choose a coating</h2><p class="muted">Nine services, each with its own page. Pick one to see what it is best for.</p></div>
+    <div class="head up">${ripple}<h2 id="svc-h">Choose a coating</h2><p class="muted">Eight services, each with its own page. Pick one to see what it is best for.</p></div>
     <div class="switch" data-switch>
       <ul class="switch__list" role="tablist" aria-label="Coating services" aria-orientation="vertical">${tabs}</ul>
       <div>${panels}</div>
@@ -88,7 +88,7 @@ export function renderHome() {
         <p>A Havasu garage is rarely just a garage. It is a boat shed, an RV bay, a gym, a beer fridge and a workshop, and its floor sees hot tires in July, lake water off the trailer and sand tracked in from the beach. Bare concrete stains, dusts and cracks under all of that. Cheap coatings peel.</p>
         <p>Our garage systems start with a full diamond grind and crack repair, then a strong base coat, a decorative flake broadcast and a UV-stable, slip-resistant topcoat. The result handles hot tires and heavy trailers, wipes clean after a messy lake day and looks sharp when the door is up.</p>
         <ul class="dots"><li>Sized for oversized RV and boat bays</li><li>Hot-tire-resistant, UV-stable topcoats</li><li>Textured for wet floors after washing the boat</li></ul>
-        <a class="go" href="/garage-floor-coatings/">Explore garage coatings</a>
+        <a class="go" href="/garage-rv-boat-bay-coatings/">Explore garage coatings</a>
       </div>
     </div>
   </div>
@@ -101,7 +101,7 @@ export function renderHome() {
       <div class="card__body">
         <h2 style="font-size:1.75rem">Residential epoxy flooring</h2>
         <p>Inside a lake house, floors deal with wet feet, sandy flip-flops, dogs fresh out of the water and guests who are not going to take their shoes off. A seamless epoxy or polyaspartic floor laid over the slab shrugs it all off and stays cool underfoot through long summers.</p>
-        <p>We coat living areas, casitas, laundry rooms, game rooms and the hallways between the garage and the pool. Satin finishes keep the look calm and hide footprints, and light colors bounce daylight around rooms with smaller windows. Read more on our <a href="/residential-epoxy-flooring/">residential epoxy page</a>.</p>
+        <p>We coat living areas, casitas, laundry rooms, game rooms and the hallways between the garage and the pool. Satin finishes keep the look calm and hide footprints, and light colors bounce daylight around rooms with smaller windows. Read more on our <a href="/lake-house-epoxy-floors/">residential epoxy page</a>.</p>
       </div>
     </article>
     <article class="card card--offset up t1">
@@ -115,7 +115,7 @@ export function renderHome() {
           <span><i style="background:linear-gradient(135deg,#d9dde0,#8e979c)"></i>Driftwood grey</span>
           <span><i style="background:linear-gradient(135deg,#e7b38e,#a8623d)"></i>Sunset copper</span>
         </div>
-        <p>See <a href="/decorative-flake-flooring/">decorative flake</a> and <a href="/metallic-epoxy-flooring/">metallic epoxy</a>.</p>
+        <p>See <a href="/flake-floor-coatings/">decorative flake</a> and <a href="/metallic-floors/">metallic epoxy</a>.</p>
       </div>
     </article>
   </div>
@@ -132,7 +132,7 @@ export function renderHome() {
         <div><b>UV</b><span>Strong sun yellows standard epoxy; we use UV-stable topcoats</span></div>
         <div><b>Sand</b><span>Abrasive grit is hidden by flake and resisted by tough topcoats</span></div>
       </div>
-      <button class="pill pill--white" type="button" data-quote>Plan a floor for the heat</button>
+      <a class="pill pill--white" href="#__EST__">Plan a floor for the heat</a>
     </div>
   </div>
 </section>
@@ -147,7 +147,7 @@ export function renderHome() {
           <h3 style="font-size:1.5rem">Commercial epoxy flooring</h3>
           <p>Restaurants and bars near the Channel, retail along McCulloch Boulevard, boat dealers and service shops, hotels and vacation rental managers all need floors that take traffic and clean quickly. We install seamless resin systems with texture where floors get wet, chemical-resistant topcoats for kitchens and service bays, and decorative finishes for showrooms.</p>
           <ul class="tags"><li>Restaurants & bars</li><li>Boat dealers & service</li><li>Retail & showrooms</li><li>Hotels & rentals</li><li>Clinics & offices</li></ul>
-          <a class="go" href="/commercial-epoxy-flooring/">Commercial flooring</a>
+          <a class="go" href="/commercial-epoxy/">Commercial flooring</a>
         </div>
       </article>
       <article class="biz__row up">
@@ -156,7 +156,7 @@ export function renderHome() {
           <h3 style="font-size:1.5rem">Industrial flooring solutions</h3>
           <p>Boat and RV storage facilities, fabrication shops, marine manufacturing and warehouse space around the airport industrial area all depend on floors that survive heavy loads and constant traffic. We use high-build epoxy and polyurea systems, repair joints, add striping and plan phased installs so operations keep moving.</p>
           <ul class="tags"><li>Boat & RV storage</li><li>Marine manufacturing</li><li>Warehouses</li><li>Fabrication shops</li><li>Striping & zones</li></ul>
-          <a class="go" href="/warehouse-floor-coatings/">Warehouse coatings</a>
+          Warehouse coatings
         </div>
       </article>
     </div>
@@ -235,7 +235,7 @@ export function renderHome() {
       <h3>Vacation rental owners</h3>
       <p>A coated garage, patio or pool deck is easier to clean between guests and holds up better to people who are not treating it like their own. Fast-cure systems mean shorter downtime between bookings.</p>
       <p>Send us your calendar and we will find a window that works.</p>
-      <button class="pill pill--teal pill--sm" type="button" data-quote>Ask about scheduling</button>
+      <a class="pill pill--teal pill--sm" href="#__EST__">Ask about scheduling</a>
     </aside>
   </div>
 </section>
@@ -256,7 +256,7 @@ export function renderHome() {
 
 <section class="sec" aria-labelledby="areas-h">
   <div class="wrap areas">
-    <div class="up">${ripple}<h2 id="areas-h">Service areas</h2><p>We are focused on Lake Havasu City and the communities up and down this stretch of the Colorado River. If you are a little further out, give us a call. Larger commercial projects often make the drive worthwhile.</p><a class="go" href="/service-areas/">All service areas</a></div>
+    <div class="up">${ripple}<h2 id="areas-h">Service area</h2><p>We are focused on Lake Havasu City and the communities up and down this stretch of the Colorado River. If you are a little further out, give us a call. Larger commercial projects often make the drive worthwhile.</p><a class="go" href="/service-area/">All service areas</a></div>
     <div class="area-tiles up t1">${site.serviceAreas.map((a) => `<div><b>${esc(a.name)}</b><span>${esc(a.note)}</span></div>`).join('')}</div>
   </div>
 </section>
@@ -276,7 +276,7 @@ export function renderHome() {
       <p>Tell us about your garage, RV bay, pool deck or business. We will come out, measure, check the slab and leave you with a clear written quote.</p>
       <ul class="closer__list"><li><i>☎</i>${phoneLink()}</li><li><i>✓</i>Free on-site quotes</li><li><i>⌖</i>Lake Havasu City and nearby</li></ul>
     </div>
-    <div class="closer__card up t1">${leadForm({ id: 'home-form', heading: 'Request your free quote', intro: 'Takes about a minute. We will follow up to schedule your visit.', withMessage: true })}</div>
+    <div class="closer__card up t1"><h3>Ready for a written quote?</h3><p>The quote form at the top of this page takes about a minute, and we follow up to book the visit. Or call and talk it through.</p><p><a class="pill pill--teal" href="#hero-form">Go to the quote form</a> ${phoneLink()}</p></div>
   </div>
 </section>`;
 

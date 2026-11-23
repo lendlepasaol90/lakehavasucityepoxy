@@ -1,5 +1,5 @@
 export default {
-  slug: 'garage-floor-coatings',
+  slug: 'garage-rv-boat-bay-coatings',
   name: 'Garage Floor Coatings',
   tagline: 'Two-car garages to 50-foot RV and boat bays',
   summary: 'Flake and solid coatings for garages, RV bays and boat garages that handle hot tires, trailer jacks and lake water.',
@@ -48,9 +48,9 @@ We price these spaces on actual square footage, so you are not paying a flat rat
       body: 'Most Havasu garages end up with one of these. All of them start with grinding and crack repair.',
       items: [
         { name: 'Full-broadcast flake', body: 'Base coat, chips spread to full coverage, clear polyaspartic topcoat. Hides sand and tire marks better than anything. Our most popular choice.' },
-        { name: 'Flexible base flake system', body: 'Swaps in a [polyurea](/polyurea-floor-coatings/) base for extra toughness under RVs, trailers and heavy equipment.' },
+        { name: 'Flexible base flake system', body: 'Swaps in a [polyurea](/polyurea-shop-floors/) base for extra toughness under RVs, trailers and heavy equipment.' },
         { name: 'Solid color with grip', body: 'A single color with aggregate in the topcoat. Clean and modern for gyms, workshops and storage garages.' },
-        { name: 'Metallic showroom', body: 'A hand-worked [metallic epoxy](/metallic-epoxy-flooring/) floor for collectors who want the garage to look like a showroom.' },
+        { name: 'Metallic showroom', body: 'A hand-worked [metallic epoxy](/metallic-floors/) floor for collectors who want the garage to look like a showroom.' },
       ],
       after: `For color, light sand and grey blends keep the garage brighter and a bit cooler looking, while mid-tone blends with tan, grey and a little black hide sand and tire marks best. We bring chip samples so you can see them against your walls and cabinets.`,
     },
@@ -127,6 +127,6 @@ Slide a scrap of plywood beneath the boat trailer jack, motorcycle stand or moto
     { q: 'What if I have cabinets on the floor?', a: 'Wall-mounted storage can stay. Floor-standing cabinets are best moved so we can coat underneath, or we can coat neatly around them. We will plan it with you.' },
     { q: 'Is it too hot to install in summer?', a: 'Not if it is done right. We work early in the day, keep materials cool and choose products that handle heat. Many of our garages are coated in summer.' },
   ],
-  related: ['polyaspartic-floor-coatings', 'polyurea-floor-coatings', 'decorative-flake-flooring'],
+  related: ['one-day-polyaspartic', 'polyurea-shop-floors', 'flake-floor-coatings'],
   cta: { heading: 'Get your garage quoted', body: 'We will measure your garage or RV bay, check the slab, bring flake samples and give you a clear written quote.' },
 };
