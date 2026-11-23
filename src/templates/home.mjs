@@ -169,7 +169,7 @@ export function renderHome() {
     <div class="why">
       <article class="up">${ico('M4 20l4-4m0 0l8-8 4 4-8 8m-4-4l4 4M14 6l4 4')}<h3>Ground, not etched</h3><p>Diamond grinding opens the concrete so coatings bond in, not just on. That is the step that beats hot-tire peeling.</p></article>
       <article class="up t1">${ico('M12 3v2m0 14v2m9-9h-2M5 12H3m15.4-6.4l-1.4 1.4M7 17l-1.4 1.4m12.8 0L17 17M7 7L5.6 5.6M12 8a4 4 0 100 8 4 4 0 000-8z')}<h3>Heat-smart scheduling</h3><p>Summer installs start early, materials stay shaded and batches are sized for hot slabs.</p></article>
-      <article class="up t2">${ico('M9 5h10M9 12h10M9 19h10M5 5h.01M5 12h.01M5 19h.01')}<h3>Clear written quotes</h3><p>Every layer, repair and cure time spelled out, so comparing quotes is easy.</p></article>
+      <article class="up t2">${ico('M9 5h10M9 12h10M9 19h10M5 5h.01M5 12h.01M5 19h.01')}<h3>Clear written quotes</h3><p>Every layer, repair and cure time spelled out, so comparing quotes from different <a href="https://templeepoxypros.com/epoxy-flooring">epoxy floor installers</a> is easy.</p></article>
       <article class="up">${ico('M3 12h4l3-8 4 16 3-8h4')}<h3>Systems sized to the job</h3><p>An RV bay, a pool deck and a laundry room each get the system that suits them, not one-size-fits-all.</p></article>
       <article class="up t1">${ico('M4 7h16v12H4zM8 7V5h8v2')}<h3>Respectful crews</h3><p>Dust-controlled grinding, protected walls and a clean space when we leave, rental or residence.</p></article>
       <article class="up t2">${ico('M5 13l4 4L19 7')}<h3>Care that lasts</h3><p>We walk you through cure times and simple cleaning tips so your floor stays looking new.</p></article>
