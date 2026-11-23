@@ -1,5 +1,5 @@
 export default {
-  slug: 'decorative-flake-flooring',
+  slug: 'flake-floor-coatings',
   name: 'Decorative Flake Flooring',
   tagline: 'Granite-look chip floors that disguise beach sand',
   summary: 'Multi-color chip floors that hide sand, water spots and wear, in blends inspired by the lake and desert.',
@@ -56,7 +56,7 @@ Chip size changes things too. Quarter-inch chips are bold and textured. Eighth-i
       heading: 'Where flake floors show up around Havasu',
       toc: 'Applications',
       items: [
-        { name: 'Garages and RV bays', body: 'The go-to finish. See [garage coatings](/garage-floor-coatings/).' },
+        { name: 'Garages and RV bays', body: 'The go-to finish. See [garage coatings](/garage-rv-boat-bay-coatings/).' },
         { name: 'Covered patios', body: 'With a UV-stable topcoat and texture for bare feet.' },
         { name: 'Laundry rooms', body: 'Fine chips in a light blend handle water and detergent.' },
         { name: 'Boat dealers and shops', body: 'Durable, good-looking and easy to keep clean.' },
@@ -106,7 +106,7 @@ And because sand is part of daily life here, we make sure the topcoat is thick e
       body: `Price depends mostly on size and slab condition. Removing old coatings, repairing cracks and dealing with oil-stained areas add prep time. Full broadcast uses more chips than partial broadcast, and custom blends cost more than stock options. Coating stem walls and extra texture are small add-ons. We list every part in your written quote.`,
     },
     {"kind": "table", "heading": "Chip size guide", "toc": "Chip sizes", "body": "Chip size has a big effect on how the finished floor reads from standing height.", "cols": ["Chip size", "Look", "Best for"], "rows": [["1/4 inch", "Bold, textured, classic garage look", "Garages, RV bays, shops"], ["1/8 inch", "Finer speckle, a bit more refined", "Laundry rooms, smaller garages, studios"], ["Micro / mica blend", "Subtle stone texture", "Interiors, casitas, offices"], ["Mixed sizes", "Natural, layered look", "Showrooms and statement garages"]]},
-    {"kind": "prose", "heading": "Flake, solid or metallic?", "toc": "Choosing a finish", "body": "If you are torn between finishes, think about how the space is used. Flake is the practical pick for anywhere that sees sand, water, tools or tires; it hides the most and forgives the most. Solid colors look clean and modern but show dust and marks sooner, so they suit gyms, studios and spaces that get cleaned often. [Metallic epoxy](/metallic-epoxy-flooring/) is the showpiece, best indoors or in a garage that is more display than workshop.\n\nPlenty of homes mix them: flake in the garage, micro flake in the laundry room and a metallic finish in the game room."},
+    {"kind": "prose", "heading": "Flake, solid or metallic?", "toc": "Choosing a finish", "body": "If you are torn between finishes, think about how the space is used. Flake is the practical pick for anywhere that sees sand, water, tools or tires; it hides the most and forgives the most. Solid colors look clean and modern but show dust and marks sooner, so they suit gyms, studios and spaces that get cleaned often. [Metallic epoxy](/metallic-floors/) is the showpiece, best indoors or in a garage that is more display than workshop.\n\nPlenty of homes mix them: flake in the garage, micro flake in the laundry room and a metallic finish in the game room."},
     {"kind": "prose", "heading": "Matching the floor to your home", "toc": "Matching your home", "body": "A garage floor is part of the view every time the door goes up, so it is worth matching it to the house. Warm stucco and tile roofs pair naturally with beach sand and sunset blends. Modern homes with white or grey exteriors look sharp with shoreline or desert granite. Inside, look at cabinet colors and wall paint too. Holding a few chip samples against them during the quote visit is the easiest way to decide."},
   ],
   faqHeading: 'Flake floor questions',
@@ -116,10 +116,10 @@ And because sand is part of daily life here, we make sure the topcoat is thick e
     { q: 'Can I see the colors before choosing?', a: 'Yes. We bring chip samples to every quote so you can see them on your actual floor in your own light.' },
     { q: 'Will the chips fade?', a: 'Indoors, chips sealed under a quality topcoat hold their color very well. On patios in full sun, we recommend UV-stable topcoats and colors that resist fading.' },
     { q: 'How long does it take?', a: 'A typical garage takes one to two days. Laundry rooms and small spaces can be faster.' },
-    { q: 'Can a flake floor go outside?', a: 'On covered patios, yes, with an exterior topcoat. Uncovered pool decks usually do better with a cooler, textured system. See [patio coatings](/patio-concrete-coatings/).' },
+    { q: 'Can a flake floor go outside?', a: 'On covered patios, yes, with an exterior topcoat. Uncovered pool decks usually do better with a cooler, textured system. See [patio coatings](/pool-deck-coatings/).' },
     {"q": "Do flake floors add value to a home?", "a": "A finished garage tends to stand out in listing photos and walkthroughs, especially in a town where buyers care about boat and RV space. It is hard to put a number on it, but it is a common upgrade buyers notice."},
     {"q": "Can you add flakes to just part of a floor?", "a": "Yes. Some people choose a solid border with a flake field, or different blends for different areas. We will help you plan a layout that looks intentional."},
   ],
-  related: ['garage-floor-coatings', 'patio-concrete-coatings', 'residential-epoxy-flooring'],
+  related: ['garage-rv-boat-bay-coatings', 'pool-deck-coatings', 'lake-house-epoxy-floors'],
   cta: { heading: 'Pick your blend in person', body: 'We will bring chip samples in several colors and sizes, check the slab and leave you with a written quote.' },
 };

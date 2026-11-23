@@ -1,5 +1,5 @@
 export default {
-  slug: 'polyaspartic-floor-coatings',
+  slug: 'one-day-polyaspartic',
   name: 'Polyaspartic Floor Coatings',
   tagline: 'Fast turnaround, sun-proof finish',
   summary: 'Fast-curing, UV-stable coatings that get garages and patios back in use quickly and keep their color in the Havasu sun.',
@@ -71,7 +71,7 @@ The upside of the heat is that once the floor is down, it reaches hardness quick
       toc: 'System options',
       items: [
         { name: 'Garage flake system', body: 'Bonded base, wall-to-wall chips, then a gritty clear coat that cures in hours. What most Havasu garages end up with.' },
-        { name: 'Covered patio and lanai', body: 'A UV-stable, textured system for shaded outdoor spaces. See [patio coatings](/patio-concrete-coatings/).' },
+        { name: 'Covered patio and lanai', body: 'A UV-stable, textured system for shaded outdoor spaces. See [patio coatings](/pool-deck-coatings/).' },
         { name: 'Solid color quick-turn', body: 'Pigmented polyaspartic for shops, gyms and commercial back rooms that need to reopen fast.' },
         { name: 'Topcoat refresh', body: 'A new polyaspartic topcoat over a sound, older coating that has dulled.' },
       ],
@@ -137,6 +137,6 @@ Where it falls short: badly uneven slabs that need a thick leveling layer (epoxy
     { q: 'Does it smell?', a: 'There is some odor during application that clears quickly with the garage door open. Many products are lower odor than older solvent coatings.' },
     {"q": "Is polyaspartic safe for pets and kids once cured?", "a": "Once fully cured, it forms an inert, hard surface. During installation and early cure, keep pets and children out of the space; we will tell you when it is ready."},
   ],
-  related: ['garage-floor-coatings', 'polyurea-floor-coatings', 'patio-concrete-coatings'],
+  related: ['garage-rv-boat-bay-coatings', 'polyurea-shop-floors', 'pool-deck-coatings'],
   cta: { heading: 'Ask about a fast-cure floor', body: 'We will check your slab and sun exposure, recommend the right system and give you a written quote with a realistic timeline.' },
 };

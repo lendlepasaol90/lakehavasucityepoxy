@@ -5,6 +5,22 @@
 //   WEB3FORMS_ACCESS_KEY Free email delivery via https://web3forms.com (sends to the address tied to the key)
 // Every lead is also written to the Worker logs, so nothing is lost while delivery is being set up.
 
+// Old URLs from the first launch, permanently moved.
+const REDIRECTS = {
+  "/garage-floor-coatings/": "/garage-rv-boat-bay-coatings/",
+  "/residential-epoxy-flooring/": "/lake-house-epoxy-floors/",
+  "/decorative-flake-flooring/": "/flake-floor-coatings/",
+  "/metallic-epoxy-flooring/": "/metallic-floors/",
+  "/polyaspartic-floor-coatings/": "/one-day-polyaspartic/",
+  "/polyurea-floor-coatings/": "/polyurea-shop-floors/",
+  "/patio-concrete-coatings/": "/pool-deck-coatings/",
+  "/commercial-epoxy-flooring/": "/commercial-epoxy/",
+  "/warehouse-floor-coatings/": "/commercial-epoxy/",
+  "/service-areas/": "/service-area/",
+  "/contact-us/": "/get-a-quote/",
+  "/privacy-policy/": "/privacy/"
+};
+
 const PROJECTS = new Set([
   'Garage floor coating', 'Residential interior floor', 'Decorative flake floor', 'Metallic epoxy floor',
   'Polyaspartic coating', 'Polyurea coating', 'Patio or pool deck', 'Commercial floor', 'Warehouse or industrial floor', 'Not sure yet',
@@ -87,6 +103,8 @@ export default {
       url.hostname = url.hostname.slice(4);
       return Response.redirect(url.toString(), 301);
     }
+    const moved = REDIRECTS[url.pathname] || REDIRECTS[url.pathname + '/'];
+    if (moved) return Response.redirect(new URL(moved + url.search, url.origin).toString(), 301);
     return env.ASSETS.fetch(request);
   },
 };

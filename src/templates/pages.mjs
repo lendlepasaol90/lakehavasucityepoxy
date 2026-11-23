@@ -31,9 +31,9 @@ Homeowners are most of our work: garages, RV and boat bays, pool decks, patios, 
 ## How a project starts
 
 You call or fill out the form. We schedule a visit, measure the space, look at the concrete and show you samples. Then you get a written quote with the options that make sense. If you decide to go ahead, we book a date and give you simple prep instructions, like what to move out of the garage.`)}
-<p style="margin-top:1.5rem"><a class="pill pill--teal" href="/contact-us/">Contact us</a> <a class="pill pill--line" href="/garage-floor-coatings/">Garage coatings</a></p>
+<p style="margin-top:1.5rem"><a class="pill pill--teal" href="/get-a-quote/">Contact us</a> <a class="pill pill--line" href="/garage-rv-boat-bay-coatings/">Garage coatings</a></p>
 </div>${box('about-form')}</div></section>`;
-  return layout({ path: '/about-us/', title: 'About Us | Lake Havasu City Epoxy', description: 'Meet the Lake Havasu City floor coating crew focused on careful prep, honest quotes and garage, pool deck and commercial floors built for the heat.', body, current: 'about', image: 'palmsShore', breadcrumbs: trail });
+  return layout({ path: '/about-us/', title: 'About us | Lake Havasu City Epoxy', description: 'Meet the Lake Havasu City floor coating crew focused on careful prep, honest quotes and garage, pool deck and commercial floors built for the heat.', body, current: 'about', image: 'palmsShore', breadcrumbs: trail });
 }
 
 const towns = {
@@ -49,7 +49,7 @@ const towns = {
 };
 
 export function renderAreas() {
-  const trail = [{ name: 'Home', path: '/' }, { name: 'Service areas', path: '/service-areas/' }];
+  const trail = [{ name: 'Home', path: '/' }, { name: 'Service area', path: '/service-area/' }];
   const body = `${top({ title: 'Areas we serve along the river', lede: 'Based in Lake Havasu City and working up and down this stretch of the Colorado River.', image: 'boatsFloat', trail })}
 <section class="sec sec--s"><div class="wrap">
   <div class="read up">${md(`Coating work in this climate depends on timing. In summer, we often start at first light so the slab and materials stay cool enough to work properly. Staying close to Lake Havasu City lets us do that reliably and keep projects moving.
@@ -59,11 +59,11 @@ These are the communities we cover most. If you are outside them, call us anyway
   <div class="read up" style="margin-top:3rem"><h2>Services in every area</h2><ul>${services.map((s) => `<li><a href="/${s.slug}/">${esc(s.name)}</a>: ${esc(s.tagline)}</li>`).join('')}</ul></div>
 </div></section>
 <section class="sec closer" id="estimate"><div class="wrap closer__grid"><div><h2>Check if we cover you</h2><p>Send your address area and project and we will confirm when we follow up, or call ${phoneLink()}.</p></div><div class="closer__card">${leadForm({ id: 'areas-form', heading: 'Request a quote', withMessage: true })}</div></div></section>`;
-  return layout({ path: '/service-areas/', title: 'Service Areas | Lake Havasu City Epoxy', description: 'Floor coatings in Lake Havasu City, the Island, Havasu Foothills Estates, Desert Hills, Horizon Six, Crystal Beach, Golden Shores, Parker and Needles.', body, current: 'areas', image: 'boatsFloat', breadcrumbs: trail });
+  return layout({ path: '/service-area/', title: 'Service area | Lake Havasu City Epoxy', description: 'Floor coatings in Lake Havasu City, the Island, Havasu Foothills Estates, Desert Hills, Horizon Six, Crystal Beach, Golden Shores, Parker and Needles.', body, current: 'areas', image: 'boatsFloat', breadcrumbs: trail });
 }
 
 export function renderContact() {
-  const trail = [{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact-us/' }];
+  const trail = [{ name: 'Home', path: '/' }, { name: 'Contact', path: '/get-a-quote/' }];
   const body = `${top({ title: 'Contact us', lede: 'Questions, quotes or scheduling. Send a note and we will get back to you.', image: 'poolDeck', trail })}
 <section class="sec sec--s" id="estimate"><div class="wrap split2">
   <div class="up">
@@ -75,11 +75,11 @@ export function renderContact() {
   </div>
   <div class="sidebox up t1" style="position:static">${leadForm({ id: 'contact-form', heading: 'Request your free quote', withMessage: true })}</div>
 </div></section>`;
-  return layout({ path: '/contact-us/', title: 'Contact Us | Free Floor Coating Quotes in Lake Havasu City', description: 'Request a free, on-site quote for garage, RV bay, pool deck, interior or commercial floor coatings in Lake Havasu City and nearby river communities.', body, current: 'contact', image: 'poolDeck', breadcrumbs: trail });
+  return layout({ path: '/get-a-quote/', title: 'Contact Us | Free Floor Coating Quotes in Lake Havasu City', description: 'Request a free, on-site quote for garage, RV bay, pool deck, interior or commercial floor coatings in Lake Havasu City and nearby river communities.', body, current: 'contact', image: 'poolDeck', breadcrumbs: trail });
 }
 
 export function renderPrivacy() {
-  const trail = [{ name: 'Home', path: '/' }, { name: 'Privacy policy', path: '/privacy-policy/' }];
+  const trail = [{ name: 'Home', path: '/' }, { name: 'Privacy policy', path: '/privacy/' }];
   const body = `${top({ title: 'Privacy policy', lede: 'How the information you send through this website is handled.', image: 'palmsShore', trail })}
 <section class="sec sec--s"><div class="wrap read">${md(`## What we receive
 
@@ -95,15 +95,15 @@ Messages may be delivered to us through an email or automation service. The map 
 
 ## Your choices
 
-Ask us anytime to correct or delete what you sent by reaching out through our [contact page](/contact-us/).
+Ask us anytime to correct or delete what you sent by reaching out through our [contact page](/get-a-quote/).
 
 ## Changes
 
 We may update this policy. The current version is always here.`)}</div></section>`;
-  return layout({ path: '/privacy-policy/', title: 'Privacy Policy | Lake Havasu City Epoxy', description: 'How Lake Havasu City Epoxy collects, uses and protects details submitted through the quote and contact forms on this website.', body, breadcrumbs: trail });
+  return layout({ path: '/privacy/', title: 'Privacy Policy | Lake Havasu City Epoxy', description: 'How Lake Havasu City Epoxy collects, uses and protects details submitted through the quote and contact forms on this website.', body, breadcrumbs: trail });
 }
 
 export function render404() {
-  const body = `<section class="nf"><div class="wrap read ctr"><h1>This page drifted off</h1><p class="lead">The link may be old or mistyped. Try one of these.</p><p><a class="pill pill--teal" href="/">Homepage</a> <a class="pill pill--line" href="/garage-floor-coatings/">Garage coatings</a> <a class="pill pill--line" href="/contact-us/">Contact</a></p></div></section>`;
+  const body = `<section class="nf"><div class="wrap read ctr"><h1>This page drifted off</h1><p class="lead">The link may be old or mistyped. Try one of these.</p><p><a class="pill pill--teal" href="/">Homepage</a> <a class="pill pill--line" href="/garage-rv-boat-bay-coatings/">Garage coatings</a> <a class="pill pill--line" href="/get-a-quote/">Contact</a></p></div></section>`;
   return layout({ path: '/404.html', title: 'Page not found | Lake Havasu City Epoxy', description: 'The page you were looking for could not be found.', body }).replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex">');
 }

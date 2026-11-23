@@ -1,5 +1,5 @@
 export default {
-  slug: 'polyurea-floor-coatings',
+  slug: 'polyurea-shop-floors',
   name: 'Polyurea Floor Coatings',
   tagline: 'Tough, flexible base coats for heavy loads',
   summary: 'Flexible, impact-resistant base coats for RV bays, boat garages and shops that carry heavy loads and see big heat swings.',
@@ -33,7 +33,7 @@ Polyurea stretches slightly and springs back. It spreads impact loads instead of
       image: 'garageRow',
       body: `Havasu's RV and boat garages are the perfect example of where polyurea shines. They carry the heaviest loads of any residential floor, often on small contact points like trailer jacks and leveling pads. They see water from rinsing boats, oil and fuel from engines, and lots of in-and-out traffic in summer.
 
-A typical system for these spaces is a polyurea base coat, a full flake broadcast for texture and camouflage, and a UV-stable [polyaspartic](/polyaspartic-floor-coatings/) topcoat with slip-resistant aggregate. We also recommend a simple pad or plate under jacks and stands to spread the load even further.
+A typical system for these spaces is a polyurea base coat, a full flake broadcast for texture and camouflage, and a UV-stable [polyaspartic](/one-day-polyaspartic/) topcoat with slip-resistant aggregate. We also recommend a simple pad or plate under jacks and stands to spread the load even further.
 
 The result is a floor that handles the weight, cleans up after a messy lake day and looks sharp when the big door is up.`,
     },
@@ -57,7 +57,7 @@ The result is a floor that handles the weight, cleans up after a messy lake day 
       items: [
         { name: 'Heavy-duty garage system', body: 'Polyurea base, full flake and textured polyaspartic top. Our standard for RV and boat bays.' },
         { name: 'Shop and workshop floor', body: 'Pigmented polyurea with a grit topcoat for a clean, high-traction surface.' },
-        { name: 'High-build industrial', body: 'Thicker polyurea layers for storage facilities and equipment bays. See [warehouse coatings](/warehouse-floor-coatings/).' },
+        { name: 'High-build industrial', body: 'Thicker polyurea layers for storage facilities and equipment bays. See warehouse coatings.' },
         { name: 'Flexible crack repair', body: 'Polyurea-based fillers that move with the slab, used under many systems.' },
       ],
     },
@@ -104,7 +104,7 @@ During installation, heat makes polyurea cure even faster than usual. We start e
     },
     {"kind": "uses", "heading": "When we recommend polyurea", "toc": "When to choose it", "body": "These are the situations where we usually suggest a polyurea base.", "items": [{"name": "RV and boat bays", "body": "Heavy, concentrated loads on jacks and stands."}, {"name": "Workshops", "body": "Dropped tools, rolling chests and equipment."}, {"name": "Cracked slabs", "body": "Lots of hairline cracks that move with temperature."}, {"name": "Chipped old coatings", "body": "A sign that a rigid system could not keep up."}, {"name": "Storage buildings", "body": "Constant in-and-out traffic of vehicles and trailers."}, {"name": "Fast schedules", "body": "Quick-curing bases keep big jobs moving."}]},
     {"kind": "prose", "heading": "Trailer jacks, stands and point loads", "toc": "Point loads", "body": "The heaviest things in most Havasu garages do not rest on tires. They rest on small steel feet: trailer tongue jacks, RV leveling jacks, boat stands and motorcycle kickstands. All the weight goes through a few square inches, and on a hot day that is a real test for any coating.\n\nPolyurea spreads and absorbs those loads better than rigid coatings. Even so, we suggest a simple pad, such as a square of plywood or a rubber puck, under jacks and stands. It costs almost nothing and protects the topcoat for years."},
-    {"kind": "prose", "heading": "Pairing polyurea with the right topcoat", "toc": "Topcoats", "body": "Polyurea is a superb base, but it is usually not the final layer. Many polyurea base coats are not designed for long-term sun exposure, so in garages with open doors, covered patios and any space where daylight reaches the floor, we finish with a UV-stable [polyaspartic](/polyaspartic-floor-coatings/) topcoat. That top layer also sets the texture and sheen, and it is the part that gets refreshed years down the road. In a fully enclosed shop or storage building, other topcoats may be more economical, and we will suggest the best match for your space."},
+    {"kind": "prose", "heading": "Pairing polyurea with the right topcoat", "toc": "Topcoats", "body": "Polyurea is a superb base, but it is usually not the final layer. Many polyurea base coats are not designed for long-term sun exposure, so in garages with open doors, covered patios and any space where daylight reaches the floor, we finish with a UV-stable [polyaspartic](/one-day-polyaspartic/) topcoat. That top layer also sets the texture and sheen, and it is the part that gets refreshed years down the road. In a fully enclosed shop or storage building, other topcoats may be more economical, and we will suggest the best match for your space."},
   ],
   faqHeading: 'Polyurea questions',
   faqs: [
@@ -117,6 +117,6 @@ During installation, heat makes polyurea cure even faster than usual. We start e
     {"q": "Can polyurea go over an old coating?", "a": "Usually not. Old coatings, especially chipped ones, are ground off so the polyurea bonds directly to clean concrete."},
     {"q": "Is polyurea worth it in a regular two-car garage?", "a": "If the garage only holds cars and the slab is in good shape, a quality epoxy base usually performs well and costs a little less. If it also holds a boat, trailer, side-by-side or a busy workbench, polyurea is often worth the upgrade."},
   ],
-  related: ['garage-floor-coatings', 'warehouse-floor-coatings', 'polyaspartic-floor-coatings'],
+  related: ['garage-rv-boat-bay-coatings', 'one-day-polyaspartic'],
   cta: { heading: 'Find out if your floor needs a flexible base', body: 'We will look at the loads, the cracks and the slab and recommend the right system, with a clear written quote.' },
 };
