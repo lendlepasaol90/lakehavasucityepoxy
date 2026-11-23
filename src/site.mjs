@@ -1,7 +1,15 @@
 // Site-wide configuration for Lake Havasu City Epoxy.
 
 export const site = {
-  name: 'Lake Havasu City Epoxy',
+  name: "Lake Havasu City Epoxy Flooring",
+  owner: "Sam Weise",
+  category: 'Flooring Contractor',
+  description: "Lake Havasu City Epoxy Flooring helps homeowners and businesses transform bare, stained, and aging concrete into attractive, easy-to-maintain surfaces built for everyday use. Serving Lake Havasu City, AZ, we specialize in garage epoxy flooring, decorative flake coatings, metallic epoxy floors, patio coatings, commercial epoxy flooring, and concrete surface preparation. With Arizona's intense sunshine, desert dust, and high temperatures, choosing the right floor coating matters. We offer durable flooring solutions, including UV-resistant options for sun-exposed areas. Whether you're upgrading a garage, workshop, or commercial property, we're ready to help. Proudly serving Lake Havasu City and surrounding communities.",
+  address: { street: "1500 W Acoma Ln #275", city: "Lake Havasu City", state: 'AZ', zip: '86403', country: 'US' },
+  hours: [
+    { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], label: 'Monday – Saturday', opens: '07:00', closes: '18:00', text: '7:00 AM – 6:00 PM' },
+    { days: ['Sunday'], label: 'Sunday', closed: true, text: 'Closed' },
+  ],
   domain: 'https://lakehavasucityepoxy.com',
   city: 'Lake Havasu City',
   cityLong: 'Lake Havasu City',
@@ -9,13 +17,12 @@ export const site = {
   state: 'AZ',
   locale: 'en_US',
 
-  // PLACEHOLDER — replace before launch, then set phoneVerified: true.
-  phone: '(928) 555-0164',
-  phoneHref: 'tel:+19285550164',
-  phoneVerified: false,
-  email: '',
+  phone: '(928) 440-8327',
+  phoneHref: 'tel:+19284408327',
+  phoneVerified: true,
+  email: 'info@lakehavasucityepoxy.com',
 
-  map: { query: 'Lake Havasu City, AZ', lat: 34.4839, lng: -114.3225, zoom: 11 },
+  map: { query: "1500 W Acoma Ln #275, Lake Havasu City, AZ 86403", lat: 34.496, lng: -114.346, zoom: 13 },
 
   serviceAreas: [
     { name: 'Lake Havasu City', note: 'Every part of town, from the north end to the south shore.' },

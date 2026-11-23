@@ -1,3 +1,4 @@
+import { addressOneLine, addressHtml, directionsUrl, hoursHtml, hoursShort } from '../lib/nap.mjs';
 import { site } from '../site.mjs';
 import { esc, md, img, beginDedupe, endDedupe } from '../lib/html.mjs';
 import { layout } from './layout.mjs';
@@ -274,7 +275,7 @@ export function renderHome() {
     <div class="up">
       <h2 id="est-h">Ready for a floor that keeps up with lake life?</h2>
       <p>Tell us about your garage, RV bay, pool deck or business. We will come out, measure, check the slab and leave you with a clear written quote.</p>
-      <ul class="closer__list"><li><i>☎</i>${phoneLink()}</li><li><i>✓</i>Free on-site quotes</li><li><i>⌖</i>Lake Havasu City and nearby</li></ul>
+      <ul class="closer__list"><li><i>☎</i>${phoneLink()}</li><li><i>⌂</i>${esc(addressOneLine())}</li><li><i>◷</i>${esc(hoursShort())}</li><li><i>✓</i>Free on-site quotes</li><li><i>⌖</i>Lake Havasu City and nearby</li></ul>
     </div>
     <div class="closer__card up t1">${leadForm({ id: 'home-form', heading: 'Request your free quote', intro: 'Takes about a minute. We will follow up to schedule your visit.', withMessage: true })}</div>
   </div>
@@ -283,8 +284,8 @@ export function renderHome() {
   endDedupe();
   return layout({
     path: '/',
-    title: 'Lake Havasu City Epoxy | Garage, RV Bay & Pool Deck Coatings',
-    description: 'Epoxy and polyaspartic floor coatings for Lake Havasu City garages, RV and boat bays, pool decks, homes and businesses. Built for heat, sun and sand.',
+    title: "Lake Havasu City Epoxy Flooring | Epoxy Flooring Contractor",
+    description: "Lake Havasu City Epoxy Flooring: epoxy flooring company in Lake Havasu City, AZ for garage, flake, metallic and commercial floors. Free estimates. Call (928) 440-8327.",
     body,
     image: 'garagePair',
     schema: [{ '@type': 'FAQPage', mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }],

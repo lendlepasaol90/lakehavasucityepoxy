@@ -1,3 +1,4 @@
+import { addressOneLine, addressHtml, directionsUrl, hoursHtml, hoursShort } from '../lib/nap.mjs';
 import { site } from '../site.mjs';
 import { esc, md, img } from '../lib/html.mjs';
 import { layout, crumbs } from './layout.mjs';
@@ -12,8 +13,10 @@ const box = (id) => `<aside class="sidebox">${leadForm({ id, heading: 'Free quot
 
 export function renderAbout() {
   const trail = [{ name: 'Home', path: '/' }, { name: 'About us', path: '/about-us/' }];
-  const body = `${top({ title: 'About Lake Havasu City Epoxy', lede: 'A local coating crew for garages, pool decks, homes and businesses on the lake, focused on prep, honest quotes and floors that handle the heat.', image: 'palmsShore', trail })}
+  const body = `${top({ title: 'About Lake Havasu City Epoxy Flooring', lede: 'A local coating crew for garages, pool decks, homes and businesses on the lake, focused on prep, honest quotes and floors that handle the heat.', image: 'palmsShore', trail })}
 <section class="sec sec--s"><div class="wrap split2"><div class="up">
+<p>${esc(site.description)}</p>
+<p>${esc(site.name)} is owned by <strong>${esc(site.owner)}</strong>. As an epoxy flooring company in Lake Havasu City, AZ, we are a local team that answers its own phone and stands behind its own floors.</p>
 ${md(`We do one thing: turn tired concrete into floors that hold up to how people actually live here. That means garages full of boats and side-by-sides, pool decks that see bare feet all summer, lake houses that fill up with guests, and businesses that cannot afford a peeling floor in peak season.
 
 The most important part of that job happens before any color goes down. Heat is the enemy of a poorly bonded coating, so we grind every slab, repair every crack we can find and choose systems that are rated for the temperatures Havasu throws at them.`)}
@@ -33,7 +36,7 @@ Homeowners are most of our work: garages, RV and boat bays, pool decks, patios, 
 You call or fill out the form. We schedule a visit, measure the space, look at the concrete and show you samples. Then you get a written quote with the options that make sense. If you decide to go ahead, we book a date and give you simple prep instructions, like what to move out of the garage.`)}
 <p style="margin-top:1.5rem"><a class="pill pill--teal" href="/contact-us/">Contact us</a> <a class="pill pill--line" href="/garage-floor-coatings/">Garage coatings</a></p>
 </div>${box('about-form')}</div></section>`;
-  return layout({ path: '/about-us/', title: 'About Us | Lake Havasu City Epoxy', description: 'Meet the Lake Havasu City floor coating crew focused on careful prep, honest quotes and garage, pool deck and commercial floors built for the heat.', body, current: 'about', image: 'palmsShore', breadcrumbs: trail });
+  return layout({ path: '/about-us/', title: 'About Us | Lake Havasu City Epoxy Flooring', description: 'Meet the Lake Havasu City floor coating crew focused on careful prep, honest quotes and garage, pool deck and commercial floors built for the heat.', body, current: 'about', image: 'palmsShore', breadcrumbs: trail });
 }
 
 const towns = {
@@ -59,7 +62,7 @@ These are the communities we cover most. If you are outside them, call us anyway
   <div class="read up" style="margin-top:3rem"><h2>Services in every area</h2><ul>${services.map((s) => `<li><a href="/${s.slug}/">${esc(s.name)}</a>: ${esc(s.tagline)}</li>`).join('')}</ul></div>
 </div></section>
 <section class="sec closer" id="estimate"><div class="wrap closer__grid"><div><h2>Check if we cover you</h2><p>Send your address area and project and we will confirm when we follow up, or call ${phoneLink()}.</p></div><div class="closer__card">${leadForm({ id: 'areas-form', heading: 'Request a quote', withMessage: true })}</div></div></section>`;
-  return layout({ path: '/service-areas/', title: 'Service Areas | Lake Havasu City Epoxy', description: 'Floor coatings in Lake Havasu City, the Island, Havasu Foothills Estates, Desert Hills, Horizon Six, Crystal Beach, Golden Shores, Parker and Needles.', body, current: 'areas', image: 'boatsFloat', breadcrumbs: trail });
+  return layout({ path: '/service-areas/', title: 'Service Areas | Lake Havasu City Epoxy Flooring', description: 'Floor coatings in Lake Havasu City, the Island, Havasu Foothills Estates, Desert Hills, Horizon Six, Crystal Beach, Golden Shores, Parker and Needles.', body, current: 'areas', image: 'boatsFloat', breadcrumbs: trail });
 }
 
 export function renderContact() {
@@ -70,6 +73,8 @@ export function renderContact() {
     <h2>Helpful details to include</h2>
     <ul><li>What you want coated: garage, RV or boat bay, pool deck, patio, interior or business</li><li>Rough size, and whether there is an existing coating or paint</li><li>Any cracks, stains or problem areas</li><li>Your timing, including rental bookings or when you will be out of town</li></ul>
     <p><strong>Phone:</strong> ${phoneLink()}${site.email ? `<br><strong>Email:</strong> <a href="mailto:${esc(site.email)}">${esc(site.email)}</a>` : ''}</p>
+    <p><strong>Address:</strong> <a href="${directionsUrl()}" target="_blank" rel="noopener">${esc(addressOneLine())}</a></p>
+    <p><strong>Business hours</strong></p>${hoursHtml()}
     <h3>What happens next</h3>
     <ol><li>We reach out to schedule a visit.</li><li>We measure, check the slab and bring samples.</li><li>You get a written quote with clear options.</li></ol>
   </div>
@@ -100,10 +105,10 @@ Ask us anytime to correct or delete what you sent by reaching out through our [c
 ## Changes
 
 We may update this policy. The current version is always here.`)}</div></section>`;
-  return layout({ path: '/privacy-policy/', title: 'Privacy Policy | Lake Havasu City Epoxy', description: 'How Lake Havasu City Epoxy collects, uses and protects details submitted through the quote and contact forms on this website.', body, breadcrumbs: trail });
+  return layout({ path: '/privacy-policy/', title: 'Privacy Policy | Lake Havasu City Epoxy Flooring', description: 'How Lake Havasu City Epoxy Flooring collects, uses and protects details submitted through the quote and contact forms on this website.', body, breadcrumbs: trail });
 }
 
 export function render404() {
   const body = `<section class="nf"><div class="wrap read ctr"><h1>This page drifted off</h1><p class="lead">The link may be old or mistyped. Try one of these.</p><p><a class="pill pill--teal" href="/">Homepage</a> <a class="pill pill--line" href="/garage-floor-coatings/">Garage coatings</a> <a class="pill pill--line" href="/contact-us/">Contact</a></p></div></section>`;
-  return layout({ path: '/404.html', title: 'Page not found | Lake Havasu City Epoxy', description: 'The page you were looking for could not be found.', body }).replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex">');
+  return layout({ path: '/404.html', title: 'Page not found | Lake Havasu City Epoxy Flooring', description: 'The page you were looking for could not be found.', body }).replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex">');
 }

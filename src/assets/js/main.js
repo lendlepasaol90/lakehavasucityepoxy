@@ -1,4 +1,4 @@
-/* Lake Havasu City Epoxy — interactions */
+/* Lake Havasu City Epoxy Flooring — interactions */
 (() => {
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
