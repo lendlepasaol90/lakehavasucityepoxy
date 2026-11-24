@@ -279,6 +279,16 @@ export function renderHome() {
     </div>
     <div class="closer__card up t1">${leadForm({ id: 'home-form', heading: 'Request your free quote', intro: 'Takes about a minute. We will follow up to schedule your visit.', withMessage: true })}</div>
   </div>
+</section>
+
+<section class="sec sec--s find-us" aria-labelledby="find-us-h">
+  <div class="wrap">
+    <h2 id="find-us-h">You can also find us here</h2>
+    <div class="find-us__links">
+      <a class="pill pill--line" href="https://ezlocal.com/az/lake-havasu-city/flooring-contractor/0919944157" target="_blank" rel="noopener">EZlocal</a>
+      <a class="pill pill--line" href="https://issuu.com/havasucityepoxy?ps=24" target="_blank" rel="noopener">Issuu</a>
+    </div>
+  </div>
 </section>`;
 
   endDedupe();
